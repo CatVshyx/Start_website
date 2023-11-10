@@ -1,0 +1,245 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-family: "Work Sans", sans-serif;
+}
+/*
+titles (Crimson Text,except icon) - 40px
+p (Work Sans)  - 15px
+buttons, subtitles (Work Sans), a - 20px
+username (Crimson Text) - 24px
+*/
+
+/* COLORS */
+.black {
+  background-color: #000;
+  color: #fff;
+}
+.white {
+  color: #000;
+  background-color: #fff;
+}
+/* BUTTONS */
+.button {
+  width: 170px;
+  height: 48px;
+  border-radius: 5px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* FONT-SIZE */
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: "Crimson Text", serif;
+}
+h6 {
+  font-size: 20px;
+  line-height: 200%;
+}
+p {
+  font-size: 15px;
+  color: #21252980;
+}
+a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.username {
+  font-size: 24px;
+}
+
+/* HEADER */
+header {
+  background-color: #74c69d;
+  color: #fff;
+  padding: 35px 0px 80px 0px;
+}
+.container {
+  width: 1180px;
+  margin: auto;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-block {
+  display: flex;
+  column-gap: 30px;
+}
+.icon h1 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+}
+.icon {
+  display: flex;
+  column-gap: 18px;
+}
+.header-body {
+  display: flex;
+  column-gap: 120px;
+  padding-top: 40px;
+}
+.header-body span {
+  font-weight: 700;
+}
+.left-head p {
+  color: #ffffffbf;
+}
+.welcome {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.hamburger {
+  display: none;
+}
+/* PARTNERS */
+.partners {
+  text-align: center;
+  padding: 65px 0px 85px 0px;
+}
+.green-title {
+  letter-spacing: 5px;
+  color: #74c69d;
+  font-weight: 700;
+}
+.brand-list {
+  display: flex;
+  align-items: center;
+  column-gap: 68px;
+  row-gap: 40px;
+  margin: 55px 0px;
+}
+.partners .button {
+  margin: auto;
+}
+/* COMMUNITY */
+.community {
+  display: flex;
+  column-gap: 110px;
+}
+.community p {
+  margin: 32px 0px;
+}
+/* STUDYING */
+.studying {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 75px 0px 100px 0px;
+}
+.studying p {
+  margin: 32px 0px;
+}
+/* TEAM */
+.team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 147px;
+}
+.cards-holder {
+  margin: 45px 0px;
+  display: flex;
+  justify-content: space-around;
+  column-gap: 25px;
+  row-gap: 25px;
+}
+.team .button {
+  margin: auto;
+}
+.card {
+  width: 252px;
+  height: 299px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 3px 4px 12px 1px rgba(0, 0, 0, 0.25);
+}
+.card div {
+  margin-left: 15px;
+  text-align: left;
+}
+.card img {
+  margin: auto;
+  width: 175px;
+  height: 175px;
+  margin: 20px 0px;
+}
+/* Footer  */
+footer {
+  background-color: #74c69d;
+  padding: 54px 0px;
+}
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+.social div img {
+  margin-right: 20px;
+}
+
+/* remember -375 */
+@media (max-width: 1220px) {
+  nav {
+    justify-content: space-around;
+  }
+  .container {
+    width: auto;
+    margin: 0px 20px;
+  }
+  .cards-holder {
+    flex-direction: column;
+  }
+  .brand-list {
+    flex-direction: column;
+  }
+  .brand-list img {
+    max-width: 400px;
+    height: auto;
+  }
+  .header-body img {
+    max-width: 50%;
+    height: auto;
+  }
+}
+@media (max-width: 900px) {
+  .community {
+    flex-direction: column;
+  }
+}
+@media (max-width: 800px) {
+  .studying img {
+    max-width: 60%;
+    height: auto;
+  }
+  .studying {
+    flex-direction: column-reverse;
+  }
+  .header-body {
+    flex-direction: column-reverse;
+  }
+  .header-body img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 700px) {
+  .social {
+    flex-direction: column;
+  }
+  .nav-block {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+}
