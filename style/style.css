@@ -20,7 +20,7 @@ username (Crimson Text) - 24px
   color: #000;
   background-color: #fff;
 }
-/* BUTTONS */
+/* BUTTON, INPUT */
 .button {
   width: 170px;
   height: 48px;
@@ -29,6 +29,12 @@ username (Crimson Text) - 24px
   display: flex;
   align-items: center;
   justify-content: center;
+}
+input {
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: #eee;
+  outline: none;
 }
 .button:hover {
   opacity: 0.8;
@@ -110,6 +116,7 @@ nav {
   padding: 65px 0px 85px 0px;
 }
 .green-title {
+  font-size: 16px;
   letter-spacing: 5px;
   color: #74c69d;
   font-weight: 700;
@@ -154,6 +161,7 @@ nav {
   margin: 45px 0px;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   column-gap: 25px;
   row-gap: 25px;
 }
@@ -194,6 +202,60 @@ nav {
 .portfolio .button {
   margin: auto;
   margin-top: 28px;
+}
+/* SERVICES */
+.services {
+  text-align: center;
+  padding: 30px 0 100px 0px;
+}
+.services .card {
+  width: 340px;
+  height: auto;
+  padding: 46px 15px;
+  word-break: break-word;
+}
+.services h6 {
+  margin: 15px 0px;
+}
+.services-list {
+  margin: 52px 0px 45px 0px;
+}
+.services li {
+  list-style-image: url("/assets/icons/check_list.svg");
+  text-align: left;
+}
+.services .cards-holder .button {
+  margin: auto;
+}
+.services .cards-holder span {
+  font-size: 40px;
+  color: #000;
+  font-weight: bold;
+}
+/* CONTACT */
+.contact-text {
+  text-align: center;
+}
+.contact-body {
+  display: flex;
+  column-gap: 30px;
+  row-gap: 30px;
+  padding-bottom: 93px;
+}
+.contact-body label {
+  font-size: 20px;
+  color: #000;
+}
+.left-contact input {
+  width: 100%;
+  margin: 16px 0px 21px 0px;
+  height: 38px;
+}
+.left-contact .button {
+  height: 48px;
+}
+#message {
+  height: 75px;
 }
 /* FOOTER  */
 footer {
@@ -237,6 +299,9 @@ footer {
 @media (max-width: 900px) {
   .community {
     flex-direction: column;
+  }
+  .contact-body {
+    flex-direction: column-reverse;
   }
 }
 @media (max-width: 800px) {
